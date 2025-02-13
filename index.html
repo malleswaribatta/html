@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Product Card</title>
-  <style>
- #div{
-  height: 500px;
-  width: 600px;
-  /* border: 2px solid ; */
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 150px;
-  background-color: white;
- }
- #body{
- background-color: rgba(255, 182, 193,0.3);
- }
- #p{
-  color: rgb(250, 180, 190);
- }
+  <head>
+    <title>Product Card</title>
+    <style>
+      .color {
+        color: rgb(243, 154, 167);
+      }
+      #div {
+        height: 500px;
+        width: 600px;
+        /* border: 2px solid ; */
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 150px;
+        background-color: white;
+      }
+      #body {
+        background-color: rgba(255, 182, 193, 0.3);
+      }
+      #p {
+        color: rgb(250, 180, 190);
+      }
 
-  </style>
-</head>
-<body id="body">
-  <div id="div">
-    <section>
-
-      <img src="./shoes.png" alt="" style="float: left; width: 50%;  height:350px; margin-right: 30px; border-radius: 20px 0px 0px 0px;">
-    </section>
-      <section style="padding: 10px;">
-      <p id="p" >WOMEN'S RUNNING SHOE</p>
-       <h1 id="h1">NIKE EPIC REACT FLYKNIT</h1>
-       <p style="color:  rgb(243, 154, 167); font-size: 20px;">&dollar;150</p>
-       <p style="line-height: 30px;">The Nike Epic React Flyknit foam cushioning is responsive yet light-weight, durable yet soft. This creates a sensation that not only enhances the feeling of moving forward, but makes running feel fun, too.</p>
-       <p style="color:  rgb(243, 154, 167);">CHOOSE SIZE</p>
-       <table style="color: rgb(243, 154, 167);">
-        <tr>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-        </tr>
-       </table>
-       <p style="margin-left: 330px; padding: 10px ;border: 1px solid black; display: inline; background-color: rgba(255, 182, 193,0.3) ">ADD TO CART</p>
-       <p style="margin-left:5px;padding: 10px ;border: 1px solid black; display: inline;  display: inline; background-color: rgba(255, 182, 193,0.3)">🤍
-       </p>
-    </section>
-  </div>
-</body>
+      .chart {
+        padding: 10px;
+        border: 1px solid black;
+        display: inline;
+        background-color: rgba(255, 182, 193, 0.3);
+      }
+      #img {
+        float: left;
+        width: 50%;
+        height: 350px;
+        margin-right: 30px;
+        border-radius: 20px 0px 0px 0px;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="div">
+      <section>
+        <img src="./shoes.png" alt="" id="img"/>
+      </section>
+      <section style="padding: 10px">
+        <p id="p">WOMEN'S RUNNING SHOE</p>
+        <h1 id="h1">NIKE EPIC REACT FLYKNIT</h1>
+        <p style="font-size: 20px" class="color">&dollar;150</p>
+        <p style="line-height: 30px">
+          The Nike Epic React Flyknit foam cushioning is responsive yet
+          light-weight, durable yet soft. This creates a sensation that not only
+          enhances the feeling of moving forward, but makes running feel fun,
+          too.
+        </p>
+        <p class="color">CHOOSE SIZE</p>
+        <table class="color" border="1" style="border: 0px solid  rgba(255, 182, 193, 0.3);  padding: 5px;">
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+        </table>
+        <p style="margin-left: 330px" class="chart">ADD TO CART</p>
+        <p style="margin-left: 5px" class="chart">🤍</p>
+      </section>
+    </div>
+  </body>
 </html>
